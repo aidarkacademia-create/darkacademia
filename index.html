@@ -8,107 +8,33 @@
   <meta name="keywords" content="dark academia music, study music, focus music, instrumental music, ambient music, reading music, no lyrics, piano music, cello music, baroque music">
   <meta property="og:title" content="Dark Academia Music for Studying | AI Dark Academia">
   <meta property="og:description" content="Free atmospheric instrumental music for studying and deep focus. Dark academia aesthetic. No lyrics. Daily uploads.">
-  <meta property="og:url" content="https://www.youtube.com/@AIDarkAcademia">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #0a0a0f;
-      color: #c9c4b8;
-      font-family: 'Georgia', serif;
-      line-height: 1.8;
-    }
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      background: radial-gradient(ellipse at center, #1a1025 0%, #0a0a0f 70%);
-    }
+    body { background: #0a0a0f; color: #c9c4b8; font-family: Georgia, serif; line-height: 1.8; }
+    .hero { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; background: radial-gradient(ellipse at center, #1a1025 0%, #0a0a0f 70%); }
     .candle { font-size: 3rem; margin-bottom: 20px; }
-    h1 {
-      font-size: 2.4rem;
-      color: #c9a84c;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-    .subtitle {
-      font-size: 1.1rem;
-      color: #8a8070;
-      margin-bottom: 40px;
-      font-style: italic;
-    }
-    .cta {
-      display: inline-block;
-      background: #c9a84c;
-      color: #0a0a0f;
-      padding: 14px 36px;
-      text-decoration: none;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      margin-bottom: 60px;
-      transition: background 0.2s;
-    }
+    h1 { font-size: 2.4rem; color: #c9a84c; margin-bottom: 10px; letter-spacing: 2px; }
+    .subtitle { font-size: 1.1rem; color: #8a8070; margin-bottom: 16px; font-style: italic; }
+    .stats { font-size: 0.9rem; color: #5a5060; margin-bottom: 40px; }
+    .stats span { color: #c9a84c; font-size: 1.1rem; }
+    .cta { display: inline-block; background: #c9a84c; color: #0a0a0f; padding: 14px 36px; text-decoration: none; font-size: 1rem; letter-spacing: 1px; margin-bottom: 60px; }
     .cta:hover { background: #e0c070; }
-    .playlists {
-      max-width: 700px;
-      width: 100%;
-      margin: 0 auto 60px;
-    }
-    .playlists h2 {
-      color: #c9a84c;
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
-    .playlist-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
-    .playlist-item {
-      background: #12101a;
-      border: 1px solid #2a2535;
-      padding: 16px;
-      text-align: left;
-    }
-    .playlist-item a {
-      color: #c9c4b8;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
+    .section { max-width: 900px; margin: 0 auto 60px; padding: 0 20px; }
+    .section h2 { color: #c9a84c; font-size: 1.3rem; margin-bottom: 20px; letter-spacing: 1px; }
+    .playlist-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .playlist-item { background: #12101a; border: 1px solid #2a2535; padding: 16px; }
+    .playlist-item a { color: #c9c4b8; text-decoration: none; font-size: 0.9rem; }
     .playlist-item a:hover { color: #c9a84c; }
     .playlist-icon { font-size: 1.4rem; margin-bottom: 8px; display: block; }
-    .about {
-      max-width: 700px;
-      margin: 0 auto 60px;
-      padding: 0 20px;
-      font-size: 0.95rem;
-      color: #8a8070;
-    }
-    .about h2 { color: #c9a84c; margin-bottom: 16px; font-size: 1.2rem; }
-    .instruments {
-      max-width: 700px;
-      margin: 0 auto 60px;
-      padding: 0 20px;
-    }
-    .instruments h2 { color: #c9a84c; margin-bottom: 16px; font-size: 1.2rem; }
+    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .video-item a { text-decoration: none; color: #c9c4b8; display: block; }
+    .video-item img { width: 100%; border: 1px solid #2a2535; display: block; }
+    .video-title { display: block; padding: 8px 4px; font-size: 0.85rem; color: #8a8070; }
+    .video-item a:hover .video-title { color: #c9a84c; }
+    .about { color: #8a8070; font-size: 0.95rem; }
     .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
-    .tag {
-      background: #12101a;
-      border: 1px solid #2a2535;
-      padding: 4px 12px;
-      font-size: 0.85rem;
-      color: #8a8070;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #3a3530;
-      font-size: 0.8rem;
-    }
+    .tag { background: #12101a; border: 1px solid #2a2535; padding: 4px 12px; font-size: 0.85rem; color: #8a8070; }
+    footer { text-align: center; padding: 30px; color: #3a3530; font-size: 0.8rem; }
     footer a { color: #c9a84c; text-decoration: none; }
   </style>
 </head>
@@ -117,66 +43,66 @@
     <div class="candle">🕯️</div>
     <h1>DARK ACADEMIA MUSIC</h1>
     <p class="subtitle">Atmospheric instrumentals for studying, reading & deep focus</p>
-    <a class="cta" href="https://www.youtube.com/@AIDarkAcademia" target="_blank">
-      LISTEN FREE ON YOUTUBE →
-    </a>
+    <p class="stats"><span>4</span> tracks uploaded &nbsp;|&nbsp; Updated March 25, 2026</p>
+    <a class="cta" href="https://www.youtube.com/@AIDarkAcademia" target="_blank">LISTEN FREE ON YOUTUBE →</a>
+  </div>
 
-    <div class="playlists">
-      <h2>COLLECTIONS</h2>
-      <div class="playlist-grid">
-        <div class="playlist-item">
-          <span class="playlist-icon">🎹</span>
-          <a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSpuKjTkz5yaKIJ4GLyNEQTz" target="_blank">Piano Collection</a>
+  <div class="section">
+    <h2>LATEST UPLOADS</h2>
+    <div class="video-grid">
+        <div class="video-item">
+          <a href="https://youtube.com/watch?v=ZVN6CHvrZYk" target="_blank">
+            <img src="https://img.youtube.com/vi/ZVN6CHvrZYk/mqdefault.jpg" alt="Dark Academia Study Mix" loading="lazy">
+            <span class="video-title">Dark Academia Study Mix</span>
+          </a>
         </div>
-        <div class="playlist-item">
-          <span class="playlist-icon">🎻</span>
-          <a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSrKM38ZW3REZYXpCsQalx2U" target="_blank">Strings Collection</a>
+        <div class="video-item">
+          <a href="https://youtube.com/watch?v=2_fw1a9_8qE" target="_blank">
+            <img src="https://img.youtube.com/vi/2_fw1a9_8qE/mqdefault.jpg" alt="Clarinet With Piano Accompaniment" loading="lazy">
+            <span class="video-title">Clarinet With Piano Accompaniment</span>
+          </a>
         </div>
-        <div class="playlist-item">
-          <span class="playlist-icon">🪕</span>
-          <a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSrBKWa3DAWC0HOLvzezCyC4" target="_blank">Ancient & Folk</a>
+        <div class="video-item">
+          <a href="https://youtube.com/watch?v=7j14jaM0jAc" target="_blank">
+            <img src="https://img.youtube.com/vi/7j14jaM0jAc/mqdefault.jpg" alt="Clarinet With Piano Accompaniment" loading="lazy">
+            <span class="video-title">Clarinet With Piano Accompaniment</span>
+          </a>
         </div>
-        <div class="playlist-item">
-          <span class="playlist-icon">🎼</span>
-          <a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSqW14pvegv-NpEJxJuTmPPb" target="_blank">Baroque & Renaissance</a>
-        </div>
-        <div class="playlist-item">
-          <span class="playlist-icon">🌙</span>
-          <a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSrhdqEhj1m9tRthw0hX5GeB" target="_blank">Ethereal & Atmospheric</a>
-        </div>
-        <div class="playlist-item">
-          <span class="playlist-icon">📚</span>
-          <a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSo6AHzELpMJglNN_LzsHXM9" target="_blank">Daily Study Mixes 30+ min</a>
-        </div>
-      </div>
+        <div class="video-item">
+          <a href="https://youtube.com/watch?v=cP7rf6TjAOM" target="_blank">
+            <img src="https://img.youtube.com/vi/cP7rf6TjAOM/mqdefault.jpg" alt="Acoustic Guitar Fingerpicking" loading="lazy">
+            <span class="video-title">Acoustic Guitar Fingerpicking</span>
+          </a>
+        </div></div>
+  </div>
+
+  <div class="section">
+    <h2>COLLECTIONS</h2>
+    <div class="playlist-grid">
+      <div class="playlist-item"><span class="playlist-icon">🎹</span><a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSpuKjTkz5yaKIJ4GLyNEQTz" target="_blank">Piano Collection</a></div>
+      <div class="playlist-item"><span class="playlist-icon">🎻</span><a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSrKM38ZW3REZYXpCsQalx2U" target="_blank">Strings Collection</a></div>
+      <div class="playlist-item"><span class="playlist-icon">🪕</span><a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSrBKWa3DAWC0HOLvzezCyC4" target="_blank">Ancient & Folk</a></div>
+      <div class="playlist-item"><span class="playlist-icon">🎼</span><a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSqW14pvegv-NpEJxJuTmPPb" target="_blank">Baroque & Renaissance</a></div>
+      <div class="playlist-item"><span class="playlist-icon">🌙</span><a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSrhdqEhj1m9tRthw0hX5GeB" target="_blank">Ethereal & Atmospheric</a></div>
+      <div class="playlist-item"><span class="playlist-icon">📚</span><a href="https://www.youtube.com/playlist?list=PLYCD6z9ZniSo6AHzELpMJglNN_LzsHXM9" target="_blank">Daily Study Mixes 30+ min</a></div>
     </div>
   </div>
 
-  <div class="about">
+  <div class="section about">
     <h2>ABOUT</h2>
-    <p>AI Dark Academia is a daily instrumental music channel for studying, reading, essay writing, and deep focus sessions. The aesthetic draws from candlelit libraries, dusty manuscripts, autumn rain, and the quiet intensity of intellectual pursuit.</p>
+    <p>AI Dark Academia is a daily instrumental music channel for studying, reading, essay writing, and deep focus sessions. Atmospheric compositions inspired by candlelit libraries, autumn rain, and old books.</p>
     <br>
     <p>No lyrics. No ads in compilations. Chapter timestamps on every long video. Always free.</p>
   </div>
 
-  <div class="instruments">
+  <div class="section">
     <h2>INSTRUMENTS</h2>
     <div class="tag-cloud">
-      <span class="tag">Grand Piano</span>
-      <span class="tag">Cello</span>
-      <span class="tag">Violin</span>
-      <span class="tag">Harp</span>
-      <span class="tag">Baroque Lute</span>
-      <span class="tag">Harpsichord</span>
-      <span class="tag">Viola da Gamba</span>
-      <span class="tag">Nyckelharpa</span>
-      <span class="tag">Hammered Dulcimer</span>
-      <span class="tag">Pipe Organ</span>
-      <span class="tag">Theremin</span>
-      <span class="tag">Flute</span>
-      <span class="tag">Oboe</span>
-      <span class="tag">Clarinet</span>
-      <span class="tag">String Quartet</span>
+      <span class="tag">Grand Piano</span><span class="tag">Cello</span><span class="tag">Violin</span>
+      <span class="tag">Harp</span><span class="tag">Baroque Lute</span><span class="tag">Harpsichord</span>
+      <span class="tag">Viola da Gamba</span><span class="tag">Nyckelharpa</span><span class="tag">Hammered Dulcimer</span>
+      <span class="tag">Pipe Organ</span><span class="tag">Theremin</span><span class="tag">Flute</span>
+      <span class="tag">Oboe</span><span class="tag">Clarinet</span><span class="tag">String Quartet</span>
       <span class="tag">Wordless Choir</span>
     </div>
   </div>
